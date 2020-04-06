@@ -327,7 +327,7 @@ Student getStudent(int *lineNumber)
                                   &student.grade, &student.age, student.country, student.city);
 
         if (!checkData(sscanfResult, student.id, student.name, student.grade, student.age, student.country,
-                       student.city))
+            student.city))
         {
             printf("in line %d\n", *lineNumber);
             answer = 0;
