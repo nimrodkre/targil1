@@ -462,8 +462,8 @@ void merge(Student students[], int left, int middle, int right)
     int sizeRight = right - middle;
     int currLeft = 0;
     int currRight = 0;
-    Student studentsLeft[sizeLeft];
-    Student studentsRight[sizeRight];
+    Student studentsLeft[MAX_STUDENTS];
+    Student studentsRight[MAX_STUDENTS];
     for (int i = 0; i < sizeLeft; i++)
     {
         studentsLeft[i] = students[left + i];
